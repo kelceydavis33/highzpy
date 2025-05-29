@@ -9,13 +9,9 @@ Class of functions for loading in DataFrames from the photometry, designed for C
 photometric files are included here.
 
 
-get_color_table(dfi, obj = False):
-
-            Generates a DataFrame of the colors that can be created with the input DataFrame photometry and assotiated 
+get_color_table(dfi, obj = False): Generates a DataFrame of the colors that can be created with the input DataFrame photometry and assotiated 
             errors on those colors, reported through error propogation
 
             
-load_photometry(path, photz_path, chi_path, zgrid_path, template_path, ignore_HST = True):
-
-            Initializes a Pandas DataFrame with photometry information for given FITS files from both
+load_photometry(path, photz_path, chi_path, zgrid_path, template_path, ignore_HST = True): Initializes a Pandas DataFrame with photometry information for given FITS files from both
             NIRCam pipeline reducations and EAZY photometric fitting outputs.
