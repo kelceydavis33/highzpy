@@ -15,3 +15,11 @@ get_color_table(dfi, obj = False): Generates a DataFrame of the colors that can 
             
 load_photometry(path, photz_path, chi_path, zgrid_path, template_path, ignore_HST = True): Initializes a Pandas DataFrame with photometry information for given FITS files from both
             NIRCam pipeline reducations and EAZY photometric fitting outputs.
+
+### SED_plotting:
+
+Functions used for plotting Spectra Energy Distributions (SEDs) designed for CEERS photometry. Several 
+    plotting functions are overly complicated (such as plot_em_all which will plot every single SED in a 
+    DataFrame in a single plot). However, plots like get_sed and jon_plot are incredibly useful and staples of 
+    high-z JWST papers.
+
